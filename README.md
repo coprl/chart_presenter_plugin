@@ -1,39 +1,52 @@
-# ChartPresenterPlugin
+# Chart Presenter Plugin
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/chart_presenter_plugin`. To experiment with that code, run `bin/console` for an interactive prompt.
+A plugin for [COPRL](http://github.com/coprl/presenters) the provides easy to use charts.
 
-TODO: Delete this and the text above, and describe your gem
+Based on the [C3 charting library](https://c3js.org/examples.html).
+
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'chart_presenter_plugin'
+gem 'chart_presenter_plugin', git: 'https://github.com/coprl/chart_presenter_plugin', require: false
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install chart_presenter_plugin
-
 ## Usage
 
-TODO: Write usage instructions here
+All the charts avaialble in C3 are avaialble with this plugin.
 
-## Development
+Example POM:
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+    plugin :chart
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+    title 'Line Chart'
+    text '[Line chart with sequential data](https://c3js.org/samples/simple_multiple.html).'
+    chart data: {
+        columns: [
+            ['data1', 30, 200, 100, 400, 150, 250],
+            ['data2', 50, 20, 10, 40, 15, 25]
+        ]
+    }
+
+Results in the following chart:
+![Line Chart](https://dl.dropbox.com/s/z0s0vnb4zw5ooxu/Screen%20Shot%202021-06-02%20at%201.02.51%20PM.png?dl=0)
+
+Use the [DEMO](https://coprl-ruby.herokuapp.com/plugins/chart) and view source or to get started with more examples.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/chart_presenter_plugin.
+Bug reports and pull requests are welcome on GitHub at https://github.com/coprl/chart_presenter_plugin.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Code of Conduct
+
+Everyone interacting in the COPRL project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/coprl/coprl/blob/master/CODE-OF-CONDUCT.md).
