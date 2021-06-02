@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "chart_presenter_plugin"
   spec.version       = ChartPresenterPlugin::VERSION
   spec.authors       = ["Russell Edens"]
-  spec.email         = ["rx@geotix.com"]
+  spec.email         = ["rx@voomify.com"]
 
   spec.summary       = %q{A charting plugin based on C3.}
-  spec.homepage      = "https://github.com/mynorth/charts_presenter_plugin"
+  spec.homepage      = "https://github.com/coprl/charts_presenter_plugin"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
