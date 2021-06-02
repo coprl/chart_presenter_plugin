@@ -17,7 +17,7 @@ module Coprl
           # It will be called once for the page.
           # The pom is passed along with the sinatra render method.
           def render_header_chart(pom, render:)
-            render.call :erb, :header, views: view_dir_chart(pom)
+            render.call :erb, :chart_header, views: view_dir_chart(pom)
           end
 
           def render_chart(comp,
