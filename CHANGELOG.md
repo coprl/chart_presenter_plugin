@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/coprl/chart_presenter_plugin/compare/v1.0.0...v1.0.1) (2021-06-02)
+
+
+### Bug Fixes
+
+* rename of header template to use the chart plugin prefix ([ac59499](https://github.com/coprl/chart_presenter_plugin/commit/ac59499be37256d68389e71401ad0bf6695b67f1))
+
 # 1.0.0 (2021-06-02)
 
 
