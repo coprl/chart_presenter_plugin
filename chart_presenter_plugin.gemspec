@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Russell Edens"]
   spec.email         = ["rx@voomify.com"]
 
-  spec.summary       = %q{A charting plugin based on C3.}
+  spec.summary       = %q{A COPRL presenters plugin for charts - uses the C3 chart library}
   spec.homepage      = "https://github.com/coprl/charts_presenter_plugin"
   spec.license       = "MIT"
 
