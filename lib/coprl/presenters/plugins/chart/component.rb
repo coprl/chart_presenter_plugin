@@ -11,7 +11,7 @@ module Coprl
             super(type: :chart, **attribs_, &block)
             @chart_options = {}
             %i(line spline step area area-spline area-step bar scatter pie donut gauge
-               data axis color size grid regions legend tooltip padding transition point).each do |setting|
+               data axis color size grid regions legend tooltip padding transition point locale).each do |setting|
               value = attribs.delete(setting)
               @chart_options.merge!(setting=>value) if value
             end
